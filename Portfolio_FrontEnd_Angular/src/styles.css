@@ -1,13 +1,14 @@
 .list-group.list-group-horizontal {
     --bs-list-group-bg: transparent;
     --bs-list-group-border-color: transparent;
+    
 }
 
 i.fa-brands.fa-facebook.fa-2xl,
 i.fa-brands.fa-instagram.fa-2xl,
 i.fa-brands.fa-twitter.fa-2xl,
 i.fa-brands.fa-linkedin.fa-2xl,
-i.fa-solid.fa-user-unlock.fa-2xl {
+i.fa-solid.fa-user-lock.fa-2xl {
     color:#ffffff;
 }
 
@@ -29,10 +30,11 @@ i.fa-solid.fa-user-lock.fa-2xl:hover {
 
 #acerca_de {
     padding: 10px;
-    border: 2px solid #000000;
+    margin-left: 50px;
+    margin-right: 50px;
     border-radius: 10px;
     margin-top: 50px;
-    background-color: #f0e68c;
+    background-color: #dee2ff;
 }
 
 p {
@@ -53,10 +55,11 @@ p {
 
 #Experiencia {
     padding: 10px;
-    border: 2px solid #000000;
+    margin-left: 50px;
+    margin-right: 50px;
     border-radius: 10px;
     margin-top: 50px;
-    background-color: #f0e68c;
+    background-color: #ffffff;
     font-size: 20px;
 }
 
@@ -74,10 +77,11 @@ p {
 
 #Educacion {
     padding: 10px;
-    border: 2px solid #000000;
+    margin-left: 50px;
+    margin-right: 50px;
     border-radius: 10px;
     margin-top: 50px;
-    background-color: #f0e68c;
+    background-color: #dee2ff;
     font-size: 20px;
 }
 
@@ -95,24 +99,26 @@ p {
 
 #HardSoft_Skills {
     padding: 10px;
-    border: 2px solid #000000;
+    margin-left: 50px;
+    margin-right: 50px;
     border-radius: 10px;
     margin-top: 50px;
-    background-color: #f0e68c;
+    background-color: #ffffff;
     font-size: 20px;
 }
 
 #Proyectos {
     padding: 10px;
-    border: 2px solid #000000;
+    margin-left: 50px;
+    margin-right: 50px;
     border-radius: 10px;
     margin-top: 50px;
-    background-color: #f0e68c;
+    background-color: #dee2ff;
     font-size: 20px;
 }
  
 .bg-light.text-center.text-lg-start {
-    padding: 40px;
+    margin-top: 50px;
     border-left: 0;
     border-right: 0;
 }

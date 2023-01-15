@@ -12,7 +12,11 @@ import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PortfolioService } from './servicios/portfolio.service';
 import { AppRoutingModule } from 'src/app-routing.module';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { InterceptorService } from './servicios/interceptor.service';
 
 @NgModule({
   declarations: [
@@ -24,15 +28,20 @@ import { HttpClientModule } from '@angular/common/http';
     EducacionComponent,
     HabilidadesComponent,
     ProyectosComponent,
-    FooterComponent
+    FooterComponent,
+    IniciarSesionComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
             
   ],
-  providers: [PortfolioService],
+  providers: [PortfolioService,
+    { provide: HTTP_INTERCEPTORS, useClass: InterceptorService, multi: true},
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
